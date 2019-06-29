@@ -7,6 +7,8 @@ import router from './router'
 import ElementUI from 'element-ui';
 //导入elementui - css
 import 'element-ui/lib/theme-chalk/index.css';
+//导入自定义样式文件
+import '@/assets/index.css';
 //安装插件
 Vue.use(ElementUI);
 
