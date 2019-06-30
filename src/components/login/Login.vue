@@ -23,8 +23,7 @@
 </template>
 
 <script>
-import axios from "axios";
-
+import axios from 'axios'
 export default {
   data() {
     return {
@@ -46,8 +45,8 @@ export default {
   },
   methods: {
     login() {
-      axios
-        .post("http://localhost:8888/api/private/v1/login", this.loginForm)
+      this.$http
+        .post("/login", this.loginForm)
         .then(res => {
           var { data, meta } = res.data;
           if (meta.status === 200) {
