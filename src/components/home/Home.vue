@@ -4,14 +4,14 @@
     <el-header>
       <el-row>
         <el-col :span="8" class="logo">
-          <img src="@/assets/logo.png" alt="黑马logo">
+          <img src="@/assets/avatar.jpg" width="60px" alt="黑马logo">
         </el-col>
         <el-col :span="8">
           <h1 class="title">电商后台管理系统</h1>
         </el-col>
         <el-col :span="8">
           <div class="welcome">
-            <span>欢迎上海前端25期星曜会员</span>
+            <span>欢迎尊敬的星曜会员</span>
             <a href="javascript:;" @click.prevent="logout">退出</a>
           </div>
         </el-col>
@@ -57,6 +57,7 @@
         </el-menu>
       </el-aside>
       <el-main>
+        电商后台管理首页
          <!-- 子路由出口 -->
         <router-view />
       </el-main>
@@ -102,6 +103,7 @@ export default {
 
     .logo {
       text-align: left;
+      padding-left: 20px;
     }
 
     .title {
